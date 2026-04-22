@@ -63,6 +63,26 @@
         color: var(--muted);
         font-size: 14px;
       }
+      .intro {
+        margin: 10px 0 0;
+        color: #d7e4ff;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .tag {
+        font-size: 12px;
+        color: #cfe0ff;
+        border: 1px solid #38588f;
+        background: #14284b;
+        border-radius: 999px;
+        padding: 3px 9px;
+      }
       footer {
         margin-top: 20px;
         color: var(--muted);
@@ -73,26 +93,44 @@
   <body>
     <main class="wrap">
       <h1>Findemo</h1>
-      <p class="desc">欢迎来到我的 Demo 导航主页，点击下面任一项目进入对应页面。</p>
+      <p class="desc">这是我的 Demo 导航主页。下方三个项目分别展示金融因果、地缘金融联动和三链地缘市场叙事分析。</p>
 
       <section class="grid">
         <a class="card" href="./FinCausalGraph_demo/" target="_blank" rel="noopener noreferrer">
           <p class="title">FinCausalGraph_demo</p>
           <p class="hint">金融因果图谱演示页面</p>
+          <p class="intro">聚焦金融指标之间的因果关系建模与可视化，适合展示事件冲击如何沿着金融变量链条传导。</p>
+          <div class="tags">
+            <span class="tag">因果图谱</span>
+            <span class="tag">金融数据</span>
+            <span class="tag">可视化分析</span>
+          </div>
         </a>
 
         <a class="card" href="./geo-fin-causal-graph/" target="_blank" rel="noopener noreferrer">
           <p class="title">geo-fin-causal-graph</p>
           <p class="hint">地缘-金融因果图谱页面</p>
+          <p class="intro">连接地缘政治事件与金融市场变量，强调“地缘冲突 - 风险情绪 - 资产价格”的跨层因果路径。</p>
+          <div class="tags">
+            <span class="tag">地缘政治</span>
+            <span class="tag">市场传导</span>
+            <span class="tag">跨域因果</span>
+          </div>
         </a>
 
         <a class="card" href="./TriChain-GeoMarket-demo/" target="_blank" rel="noopener noreferrer">
           <p class="title">TriChain-GeoMarket</p>
           <p class="hint">Tri-Chain 地缘市场联动页面</p>
+          <p class="intro">以 Event（事实）为中心，联动 News（叙事）和 Market（定价）两层，支持时间轴与详情联动浏览。</p>
+          <div class="tags">
+            <span class="tag">Event-News-Market</span>
+            <span class="tag">时间轴联动</span>
+            <span class="tag">研究 Demo</span>
+          </div>
         </a>
       </section>
 
-      <footer>如果仓库路径不同，只需修改上述链接 href。</footer>
+      <footer>如需合作或交流，欢迎联系我。</footer>
     </main>
   </body>
 </html>
